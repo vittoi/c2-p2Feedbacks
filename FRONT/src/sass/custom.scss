@@ -1,0 +1,17 @@
+
+$primary: #8fad88;
+$bs-font-sans-serif: "Inter", sans-serif;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  height: 75px;
+}
