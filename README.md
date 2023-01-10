@@ -32,7 +32,7 @@
     # production mode
     npm run start:prod
   ```
- ## Instalação e execução da API no diretório `./FRONT`
+ ## Instalação e execução do Front-End no diretório `./FRONT`
    ### Instale as dependências
   ```bash
   npm install
