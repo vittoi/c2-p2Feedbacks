@@ -2,10 +2,24 @@
 
 ## Configurando o ambiente local (SO: Windows)
   ### Pré Requisitos
-  
-   Instale o Node.js -> `https://nodejs.org/en/download/` 
+   Para a preparar o ambiente é necessário instalar algumas ferramentas para dar continuidade ao desenvolvimento, as ferramentas que devem ser intaladas são as seguintes:
    
-   Instale o Git -> `https://gitforwindows.org/`
+   ### Node.js
+   Baixe o [Node.js]([https://nodejs.org/en/download/]) na versão xx.xxx
+   Após baixado, instalado abra o PowerShell e verifique a versão executando
+   
+   ```bash
+    node -v 
+   ```   
+   
+   ### Git 
+   Baixe o [Git]([[https://www.npackd.org/p/git64/2.32.0.2]]) na versão xx.xxx
+   Após baixado, instalado abra o PowerShell e verifique a versão executando
+   
+   ```bash
+    git --version 
+   ```   
+   `https://gitforwindows.org/`
 
   ### Clonar repositório 
   ```bash
