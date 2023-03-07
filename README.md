@@ -84,3 +84,25 @@
   Abra [locahost](http://localhost:3000) no seu Browser para visualizar.
 
   A página irá recarregar quando ao salvar mudanças.
+  
+  ## Testes
+  
+  ### Postman
+  
+  Baixe o [Postman](https://www.postman.com/downloads/) na versão xx.xxx
+  
+  Após baixado e instalado abra o Postman.
+  
+  
+  Os verbos são mapeados nos arquivos .controller, ou seja o controller vai ser o primeiro lugar a executar quando houver uma requisição, assim tudo que aquela ação deve fazer deve começar ali e obedecer os padrões da arquitetura utilizada.
+  
+  A URL base é https://localhost:3030/
+  
+  Para criar um novo endpoint na aplicação consultar [NEST docs](https://docs.nestjs.com/recipes/crud-generator)
+  
+  Aqui você vai encontrar mais informações e boas práticas no padrão [REST](https://www.alura.com.br/artigos/rest-principios-e-boas-praticas) 
+  
+  Para executar uma requisição escolha o verbo(No exemplo abaixo o selecionado é o GET) que deseja e insira a [URL padrão](https://localhost:3030/) concatenada com o endpoint que deseja.
+  
+  ![image](https://user-images.githubusercontent.com/42901778/223327816-6237fe3f-be40-4db0-94b5-3a94e7bde402.png)
+
