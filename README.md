@@ -89,10 +89,34 @@
   
   ### Postman
   
+  Antes de fazer os testes veja uma breve explicação dos termos usados neste ambiente e como eles podem ser utilizado.
+  
   Baixe o [Postman](https://www.postman.com/downloads/) na versão xx.xxx
   
   Após baixado e instalado abra o Postman.
   
+  ### Verbos HTTP
+  
+  #### GET 
+  O método GET é usado para solicitar recursos de um servidor e não deve alterar o estado do servidor ou do recurso solicitado. Ele é seguro e repetível, o que significa que a mesma solicitação pode ser feita várias vezes sem causar efeitos colaterais.
+    
+  #### POST
+  O método POST é usado para enviar dados para um servidor, permitindo a modificação do estado do servidor ou do recurso solicitado. Não é seguro ou repetível e é usado em formulários web e upload de arquivos.
+    
+  #### PUT
+  O método PUT é usado para atualizar um recurso existente em um servidor. Ele envia os dados atualizados para substituir completamente o recurso existente e é idempotente, o que significa que uma solicitação PUT pode ser repetida várias vezes sem alterar o resultado ou o estado do servidor. É usado em APIs RESTful para atualizar recursos existentes.
+    
+  #### DELETE 
+  O método DELETE é usado para remover um recurso existente em um servidor. Ele solicita que o servidor remova completamente o recurso especificado e é idempotente, o que significa que uma solicitação DELETE pode ser repetida várias vezes sem alterar o resultado ou o estado do servidor. É comumente usado em APIs RESTful para remover recursos existentes.
+  
+  ### Endpoint
+  
+  Um endpoint em REST é a URL específica usada para acessar um recurso ou serviço em um servidor através de uma API RESTful. Cada endpoint é definido por um método HTTP específico e geralmente inclui parâmetros que definem qual recurso está sendo acessado e o que deve ser feito com ele.
+  
+  ### Headers
+  Os cabeçalhos HTTP são informações adicionais enviadas junto com uma solicitação ou resposta HTTP. Eles fornecem informações sobre o tipo de conteúdo, a versão do protocolo HTTP, autenticação e outros detalhes que ajudam a controlar o comportamento da solicitação ou resposta. Eles são importantes para garantir que as solicitações e respostas sejam interpretadas corretamente pelos servidores e clientes.
+  
+  ### Exemplo
   
   Os verbos são mapeados nos arquivos .controller, ou seja o controller vai ser o primeiro lugar a executar quando houver uma requisição, assim tudo que aquela ação deve fazer deve começar ali e obedecer os padrões da arquitetura utilizada.
   
