@@ -12,12 +12,16 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const feedbacks_module_1 = require("./feedbacks/feedbacks.module");
 const mongoose_1 = require("@nestjs/mongoose");
+const patterns_module_1 = require("./patterns/patterns.module");
+const questions_module_1 = require("./questions/questions.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
         imports: [mongoose_1.MongooseModule.forRoot('mongodb://localhost:27017/?directConnection=true'),
-            (0, common_1.forwardRef)(() => feedbacks_module_1.FeedbacksModule)
+            (0, common_1.forwardRef)(() => feedbacks_module_1.FeedbacksModule),
+            patterns_module_1.PatternsModule,
+            questions_module_1.QuestionsModule
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

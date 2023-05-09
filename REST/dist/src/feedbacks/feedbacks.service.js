@@ -26,7 +26,6 @@ let FeedbacksService = class FeedbacksService {
         return clientCreated;
     }
     findAll(limit, sort, query, random) {
-        console.log(limit, sort, query, random);
         if (random) {
             return this.dbModel.find(query).limit(limit).sort({ createdAt: sort }).skip(Math.floor(Math.random() * 10)).exec();
         }

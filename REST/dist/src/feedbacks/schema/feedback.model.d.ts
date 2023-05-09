@@ -7,7 +7,7 @@ export declare const FeedbackSchema: mongoose.Schema<any, mongoose.Model<any, an
     createdAt?: string;
 }>;
 export interface Feedback {
-    readonly _id: string;
+    readonly _id: mongoose.ObjectId;
     readonly pattern: string;
     readonly user: string;
     readonly description: string;

@@ -1,23 +1,21 @@
 import * as mongoose from 'mongoose';
 import * as mongoosePaginate from 'mongoose-paginate-v2';
 
-export const FeedbackSchema = new mongoose.Schema(
+export const QuestionSchema = new mongoose.Schema(
 {
-    pattern: String,
-    user: String,
+    about: String,
+    answersOptions: Array<Object>,
     description: String,
-    category:String,
     createdAt: String,
 },{ 
-    collection:'feedbacks',
-versionKey: false //here
+    collection:'questions',
+    versionKey: false //here
 }).plugin(mongoosePaginate);
 
-export interface Feedback {
+export interface Question {
     readonly _id: mongoose.ObjectId;
-    readonly pattern: string;
-    readonly user: string;
+    readonly about: string;
+    readonly answersOptions: Array<Object>;
     readonly description: string;
-    readonly category: string;
     readonly createdAt: string;
 }

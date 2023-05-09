@@ -19,7 +19,6 @@ export class FeedbacksService {
   }
 
   findAll(limit:number, sort: any, query:any, random:boolean) {
-    console.log(limit, sort, query, random)
     if(random){
       return this.dbModel.find(query).limit(limit).sort({createdAt: sort}).skip(Math.floor(Math.random()*10)).exec();
     }

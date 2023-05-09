@@ -31,10 +31,10 @@ export declare class FeedbacksController {
     private readonly feedbacksService;
     constructor(feedbacksService: FeedbacksService);
     create(createFeedbackDto: CreateFeedbackDto): Promise<import("mongoose").Document<unknown, any, import("./schema/feedback.model").Feedback> & import("./schema/feedback.model").Feedback & Required<{
-        _id: string;
+        _id: import("mongoose").Schema.Types.ObjectId;
     }>>;
     findAll(req: any): Promise<(import("mongoose").Document<unknown, any, import("./schema/feedback.model").Feedback> & import("./schema/feedback.model").Feedback & Required<{
-        _id: string;
+        _id: import("mongoose").Schema.Types.ObjectId;
     }>)[]>;
     findOne(id: string): string;
     update(id: string, updateFeedbackDto: UpdateFeedbackDto): string;
